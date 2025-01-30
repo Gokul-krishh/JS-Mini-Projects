@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Backgroundchange</title>
+  <style>
+    #bg {
+      width: 250px;
+      height: 300px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="bg"></div>
+  <button onclick="changeColor('black')">black</button>
+  <button onclick="changeColor('blue')">blue</button>
+  <button onclick="changeColor('green')">green</button>
+  <button onclick="changeColor('orange')">orange</button>
+</body>
+<script>
+  function changeColor(value) {
+    document.getElementById('bg').style.backgroundColor = value;
+  }
+</script>
+
+</html> 
